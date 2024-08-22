@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>House Architect</title>
     <!-- font awesome link  -->
     <script
       src="https://kit.fontawesome.com/ef0f1139d7.js"
@@ -30,6 +30,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "arrow-color": "#ABEF5F",
             },
           },
         },
@@ -43,8 +44,155 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header></header>
-    <main></main>
+    <header class="max-w-screen-xl mx-auto">
+      <!-- navbar design  -->
+      <nav class="navbar bg-base-100">
+        <div class="navbar-start">
+          <i
+            class="fa-solid fa-arrow-right p-4 rounded-full bg-[#ABEF5F] text-white -rotate-45"
+          ></i>
+          <a href="#" class="btn btn-ghost normal-case text-3xl font-bold"
+            >Rinterio</a
+          >
+        </div>
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-semibold" href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex space-x-6">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <a href="#" class="btn bg-[#ABEF5F]"
+            >Book Consult
+            <i
+              class="fa-solid fa-arrow-right p-2 rounded-full bg-black text-white -rotate-45"
+            ></i>
+          </a>
+        </div>
+
+        <div class="dropdown ml-28">
+          <div tabindex="0" role="button" class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="#FFFFFF"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <section>
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="./assets/banner.png"
+              alt="design house "
+              class="rounded-xl max-w-full h-auto"
+            />
+          </figure>
+          <div class="card-body items-center text-center space-y-4">
+            <h2 class="text-6xl font-bold">
+              A barn house of this design has a <br />
+              striking appearance
+            </h2>
+            <p class="fill-[#494949]">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              <br />
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+            <div class="card-actions">
+              <button class="btn bg-[#ABEF5F80]">
+                View Details
+                <i
+                  class="fa-solid fa-arrow-right p-2 rounded-full bg-[#ABEF5F] -rotate-45"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+      <!-- design thoughtful space  -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+        <!-- Text Section -->
+        <div class="space-y-4">
+          <img
+            src="./assets/Vector.png"
+            alt=""
+            class="hidden md:flex lg:flex"
+          />
+          <p><i class="fa-solid fa-arrow-right gap-4 p-2"></i>About Us</p>
+          <h2 class="text-4xl font-bold filll-[#212121]">
+            We design thoughtful,<br />
+            liveable spaces
+          </h2>
+          <p class="mt-8 text-gray-600">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+
+          <div class="mt-8 space-y-8">
+            <div class="bg-base-100 shadow-md p-4">
+              <div class="flex space-x-6 mt-8">
+                <div>
+                  <img src="./assets/commercial.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="card-title">Commercial</h3>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-base-100 shadow-md p-4">
+              <div class="flex space-x-6">
+                <div>
+                  <img src="./assets/residential.png" alt="" class="" />
+                </div>
+                <div>
+                  <h3 class="card-title">Residential</h3>
+                  <p>
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Section -->
+        <div>
+          <img
+            src="./assets/Rectangle.png"
+            alt="Modern House"
+            class="rounded-lg shadow-lg w-full h-auto"
+          />
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
